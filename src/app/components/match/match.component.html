@@ -1,0 +1,25 @@
+<div id="matches">
+    <h2>Matches</h2>
+    <div class= btns>
+        <a  (click)="getMatches();">All Matches</a>
+        <div class="input50"><input #date type="date" name="" id="" (change) = "getMatchesByDate(date.value);"></div>
+       
+    </div>
+
+    <div class="container">
+        <div class="card" *ngFor = "let match of allMatches">
+            <div class="home">
+                <h3>{{ match?.homeTeam }}</h3>
+                <p> {{ match?.homeScore }}</p>
+            </div>
+            <div class="opponent">
+                <h3>{{ match?.opponentTeam }}</h3>
+                <p>{{ match?.opponentScore }}</p>
+            </div>
+            <div class="date">
+                <h2>{{ match?.date.year }}-{{match?.date.month }}-{{ match?.date.day }}</h2>
+            </div>
+        </div>
+        
+    </div>
+</div>

@@ -1,0 +1,78 @@
+<div id="point-table">
+    <h2>Point Tables</h2>
+    
+    <div class="container">
+        <div class="scl">
+            <div class="table">
+                <table class="content-table">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Club Name</th>
+                            <th>PL</th>
+                            <th>W</th>
+                            <th>Dr</th>
+                            <th>L</th>
+                            <th>G</th>
+                            <th>P</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor = "let schoolClub of schoolClubs; let i = index">
+                            <td>{{ i+1 }}</td>
+                            <td>{{ schoolClub.clubName }}</td>
+                            <td>{{ schoolClub.numOfMatchPlayed }}</td>
+                            <td>{{ schoolClub.numOfWins }}</td>
+                            <td>{{ schoolClub.numOfDraws }}</td>
+                            <td>{{ schoolClub.numOfDefeats }}</td>
+                            <td>{{ schoolClub.goalScored }}</td>
+                            <td>{{ schoolClub.points }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="uni">
+            <div class="table">
+                <table class="content-table">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Club Name</th>
+                            <th>PL</th>
+                            <th>W</th>
+                            <th>Dr</th>
+                            <th>L</th>
+                            <th>G</th>
+                            <th>P</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor = "let uniClub of uniClubs; let i = index">
+                            <td>{{ i+1 }}</td>
+                            <td>{{ uniClub.clubName }}</td>
+                            <td>{{ uniClub.numOfMatchPlayed }}</td>
+                            <td>{{ uniClub.numOfWins }}</td>
+                            <td>{{ uniClub.numOfDraws }}</td>
+                            <td>{{ uniClub.numOfDefeats }}</td>
+                            <td>{{ uniClub.goalScored }}</td>
+                            <td>{{ uniClub.points }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="select">
+        <select #select (change)="getSortSclClubs(select.value); getSortUniClubs(select.value);">
+            <option>Points</option>
+            <option>Goals</option>
+            <option>Wins</option>
+        </select>
+    </div>
+    
+    
+</div>

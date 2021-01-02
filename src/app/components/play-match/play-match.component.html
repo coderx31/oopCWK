@@ -1,0 +1,22 @@
+<div id="play-match">
+    <h2>Play Match</h2>
+    <div class="container">
+        <div class="vsBx">
+            <div class="home">
+                <h2>{{ homeTeam?.clubName }}</h2> <!--  -->
+                <h3>{{ homeTeamScore }}</h3> <!--  -->
+            </div>
+            <div class="opponent">
+                <h2>{{ opponentTeam?.clubName }}</h2> <!--  -->
+                <h3>{{ opponentTeamScore }}</h3> <!--  -->
+            </div>
+            <div class="date">
+                <h2>{{ date | date:'yyyy-MM-dd'}}</h2>
+            </div>
+        </div>
+        <div class="btns">
+            <button class="scl" (click) = "schoolMatch();">Scl <span>vs</span> Scl</button>
+            <button class="uni" (click) = "uniMatch();">Uni <span>vs</span> Uni</button>
+        </div>
+    </div>
+</div>

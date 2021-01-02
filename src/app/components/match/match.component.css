@@ -1,0 +1,119 @@
+#matches{
+    min-height: 100vh;
+    padding: 40px 100px;
+    background: linear-gradient(45deg,#A6F6F1,#16A596);
+}
+
+#matches h2{
+    font-family: 'Poppins',sans-serif;
+    font-size: 3em;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+}
+#matches .btns{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#matches .btns a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    background: #16A596;
+    font-weight: 300;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Poppins',sans-serif;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#matches .btns a:hover{
+    letter-spacing: 4px;
+}
+
+#matches .btns .input50{
+    position: relative;
+    width: 180px;
+    height: 40px;
+    background: #f00;
+}
+
+#matches .btns .input50 input{
+    position:absolute;
+    width: 100%;
+    height:100%;
+    font-size: 16px;
+    background: #16A596;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-family: 'Poppins',sans-serif;
+    text-align: center;
+    cursor: pointer;
+}
+
+#matches .container{
+    position: relative;
+    width: 1100px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    
+}
+
+#matches .container .card{
+    position: relative;
+    width: 420px;
+    height: 200px;
+    background: #16A596;
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    outline: none;
+    
+}
+
+#matches .container .card .home,
+#matches .container .card .opponent{
+    position: relative;
+    max-width: 150px;
+    text-align: center;
+}
+
+#matches .container .card .date{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+#matches .container .card .date h2{
+    font-size: 1.5em;
+    color: rgba(255,255,255,0.5);
+}
+
+#matches .container .card .home h3,
+#matches .container .card .opponent h3{
+    position: relative;
+    font-size: 1.5em;
+    color: rgba(255,255,255,0.6);
+}
+#matches .container .card .home p,
+#matches .container .card .opponent p{
+    position: relative;
+    font-size: 3em;
+    color: rgba(255,255,255,0.6);
+}
